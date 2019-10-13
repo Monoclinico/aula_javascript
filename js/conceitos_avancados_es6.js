@@ -31,6 +31,9 @@ console.log(sum4(43,22,33));
 
 
 //spread operator
+//Em arrays, strings, na definição de objetos literais e objetos iteráveis.
+//Ao construir um objeto literal a partir de outro, utilizando o spread operator, a ordem é importante pois:
+//A ordem define quais valores das chaves com o mesmo nome irão prevalecer.
 let lista = [1,42,5,24,2];
 function teste4995(){
 
@@ -51,6 +54,9 @@ let obj47 = {
 }
 console.log(obj47.test);
 
+var str42 = "teste";
+var strArr99 = [...str42];
+console.log(strArr99);
 //Destructuring
 
 var cores = ["azul","vermelho","amarelo"];
